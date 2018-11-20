@@ -52,6 +52,10 @@
                                                 <constraint firstItem="ZBz-Rb-ydy" firstAttribute="top" secondItem="oeD-lA-XcV" secondAttribute="top" constant="-8" id="sZh-0c-hUc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="8VU-nm-vMQ" id="wgR-5n-6bw"/>
+                                            <outlet property="quoteLabel" destination="ZBz-Rb-ydy" id="pIn-jO-YBD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
