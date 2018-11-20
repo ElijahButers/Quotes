@@ -13,8 +13,16 @@ class QuoteCell: UITableViewCell {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     
-    var quoteText: String?
-    var authorText: String?
+    var quoteText: String? {
+        didSet {
+            quoteLabel.text = quoteText
+        }
+    }
+    var author: String? {
+        didSet {
+            authorLabel.text = author
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
