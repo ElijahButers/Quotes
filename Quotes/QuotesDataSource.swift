@@ -23,4 +23,13 @@ extension QuotesDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return quotes.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: QuoteCell.self)) as! QuoteCell
+        let quote = quotes[indexPath.row]
+        cell.quoteText = quote.text
+        cell.author = quote.author
+        return cell
+    }
 }
