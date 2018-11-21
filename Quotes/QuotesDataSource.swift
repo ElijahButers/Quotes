@@ -17,3 +17,7 @@ class QuotesDataSource: NSObject {
     }
 
 }
+
+extension QuotesDataSource: UITableViewDataSource {
+    
+}
