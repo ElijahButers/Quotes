@@ -9,5 +9,11 @@
 import UIKit
 
 class QuotesDataSource: NSObject {
+    
+    let quotes: [Quote]
+    
+    init(quotes: [Quote]) {
+        self.quotes = quotes
+    }
 
 }
