@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         let quotes = [
-            Quote(text:"Hello World", author: "Morphius"),
-            Quote(text:"Hello World", author: "Morphius"),
-            Quote(text:"Hello World", author: "Morphius")
+            Quote(text: "Two things are infinite: the universe and human stupidity; and I am not sure about the universe.", author: "Albert Einstein"),
+            Quote(text: "Design is not just what it looks like and feels like. Design is how it works.", author: "Steve Jobs"),
+            Quote(text: "Life is what happens when you’re busy making other plans.", author: "John Lennon")
         ]
         self.dataSource = QuotesDataSource(quotes: quotes)
         super.init(coder: aDecoder)
