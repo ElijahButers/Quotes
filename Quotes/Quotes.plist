@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Quotes.plist
-   Quotes
-
-   Created by ElijahButers on 11/22/18.
-   Copyright (c) 2018 User. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>author</key>
+		<string>Albert Einstein</string>
+		<key>text</key>
+		<string>Two things are infinite: the universe and human stupidity; and I am not sure about the universe.</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>Steve Jobs</string>
+		<key>text</key>
+		<string>Design is not just what it looks like and feels like. Design is how it works.</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>John Lennon</string>
+		<key>text</key>
+		<string>Life is what happens when you’re busy making other plans.</string>
+	</dict>
+</array>
 </plist>
