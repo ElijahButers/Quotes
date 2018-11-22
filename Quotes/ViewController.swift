@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     let dataSource: QuotesDataSource
     
     required init?(coder aDecoder: NSCoder) {
-        <#code#>
+        let quotes = [
+            Quote(text:"Hello World", author: "Morphius"),
+            Quote(text:"Hello World", author: "Morphius"),
+            Quote(text:"Hello World", author: "Morphius")
+        ]
+        self.dataSource = QuotesDataSource(quotes: quotes)
         super.init(coder: aDecoder)
     }
 
