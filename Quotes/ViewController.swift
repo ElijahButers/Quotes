@@ -11,6 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    let dataSource: QuotesDataSource
+    
+    required init?(coder aDecoder: NSCoder) {
+        <#code#>
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
