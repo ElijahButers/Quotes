@@ -30,5 +30,9 @@ extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tableView.estimatedRowHeight = 113
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.dataSource = dataSource
+        tableView.reloadData()
     }
 }
