@@ -23,12 +23,12 @@ class ViewController: UIViewController {
         self.dataSource = QuotesDataSource(quotes: quotes)
         super.init(coder: aDecoder)
     }
+}
 
+extension ViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-
