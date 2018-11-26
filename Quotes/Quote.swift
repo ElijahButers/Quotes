@@ -25,6 +25,12 @@ extension Data: PlistValue {}
 extension Dictionary: PlistValue {}
 extension Array: PlistValue {}
 
+extension Dictionary where Value: AnyObject {
+    func value<V: PlistValue, K: PlistKey>(forKey key: K) -> V where K.RawValue == String {
+        return self[key.rawValue as! Key] as! V
+    }
+}
+
 extension Quote {
     init(dictionary: [String: AnyObject]) {
         author = dictionary["author"] as! String
