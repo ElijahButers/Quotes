@@ -32,8 +32,8 @@ extension Dictionary where Value: AnyObject {
 }
 
 extension Quote {
-    init(dictionary: [String: AnyObject]) {
-        author = dictionary["author"] as! String
-        text = dictionary["text"] as! String
+    private enum Keys: String, PlistKey {
+        case text
+        case author
     }
 }
