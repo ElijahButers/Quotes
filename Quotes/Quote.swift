@@ -13,6 +13,8 @@ struct Quote {
     let author: String
 }
 
+typealias PListDictionary = [String: AnyObject]
+
 extension Quote {
     init(dictionary: [String: AnyObject]) {
         author = dictionary["author"] as! String
