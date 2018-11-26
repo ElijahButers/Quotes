@@ -15,6 +15,7 @@ struct Quote {
 
 typealias PListDictionary = [String: AnyObject]
 protocol PlistKey: RawRepresentable {}
+protocol PlistValue {}
 
 extension Quote {
     init(dictionary: [String: AnyObject]) {
