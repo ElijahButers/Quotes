@@ -9,5 +9,11 @@
 import Foundation
 
 class QuotesDataController {
+    let quotes: [Quote]
     
+    init() {
+        let fileUrl = Bundle.main.url(forResource: "Quotes", withExtension: "plist")!
+        let quotesPlist = NSArray(contentsOf: fileUrl) as! [PListDictionary]
+        quotes = quotesPlist.map(Quote.init)
+    }
 }
