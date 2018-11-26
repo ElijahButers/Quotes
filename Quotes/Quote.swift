@@ -17,6 +17,14 @@ typealias PListDictionary = [String: AnyObject]
 protocol PlistKey: RawRepresentable {}
 protocol PlistValue {}
 
+extension String: PlistValue {}
+extension Bool: PlistValue {}
+extension Int: PlistValue {}
+extension Date: PlistValue {}
+extension Data: PlistValue {}
+extension Dictionary: PlistValue {}
+extension Array: PlistValue {}
+
 extension Quote {
     init(dictionary: [String: AnyObject]) {
         author = dictionary["author"] as! String
