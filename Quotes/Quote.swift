@@ -36,4 +36,9 @@ extension Quote {
         case text
         case author
     }
+    
+    init(plist: PListDictionary) {
+        text = plist.value(forKey: Keys.text)
+        author = plist.value(forKey: Keys.author)
+    }
 }
